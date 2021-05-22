@@ -1,9 +1,8 @@
 FROM trsenna/vscodedevimages-foundation:core
 
-# ENV DEBIAN_FRONTEND=noninteractive
-
-# RUN sudo apt-get -y update --no-install-recommends \
-#     && sudo apt-get -y install --no-install-recommends \
+# RUN apt-get -y update --no-install-recommends \
+#     && export DEBIAN_FRONTEND=noninteractive \
+#     && apt-get -y install --no-install-recommends \
 #     <your-package-list-here> \
-#     && sudo apt-get autoremove -y \
-#     && sudo apt-get clean -y
+#     && apt-get autoremove -y \
+#     && apt-get clean -y

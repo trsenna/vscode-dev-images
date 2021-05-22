@@ -41,6 +41,7 @@ RUN apt-get -y update --no-install-recommends \
     wget \
     whois \
     zip \
+    net-tools \
     && apt-get autoremove -y \
     && apt-get clean -y
 
